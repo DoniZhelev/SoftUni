@@ -1,0 +1,68 @@
+{{>header}}
+<!-- Details Dashboard  -->
+<section id="viewMydestinations">
+    <h3>Your destinations</h3>
+
+    {{#each destinations}}
+
+    {{#if this.isOwner}}
+    <div class="destination-ticket">
+        <div class="destination-left">
+            <img src="{{this.imgUrl}}" alt="">
+        </div>
+        <div class="destination-right">
+            <div>
+                <h3>{{this.destination}}</h3><span>{{this.departureDate}}</span>
+            </div>
+            <div>
+                to {{this.city}}
+            </div>
+            <p>{{this.duration}} days </p>
+            <a href="#/delete/{{this.id}}" class="remove">REMOVE</a>
+            <a href="#/details/{{this.id}}" class="details">Details</a>
+        </div>
+    </div>
+    {{/if}}
+    {{/each}}
+</section>
+
+{{>footer}}
+
+
+
+{{!-- 
+
+    <div class="destination-ticket">
+        <div class="destination-left">
+            <img src="https://image.freepik.com/free-photo/walking-hooker-valley-track-with-view-mount-cook-new-zealand_181624-17124.jpg"
+                alt="">
+        </div>
+        <div class="destination-right">
+            <div>
+                <h3>New Zealand</h3><span>2020-11-15</span>
+            </div>
+            <div>
+                to Auckland
+            </div>
+            <p>15 days </p>
+            <a href="" class="remove">REMOVE</a>
+            <a href="" class="details">Details</a>
+        </div>
+
+    </div>
+    <div class="destination-ticket">
+        <div class="destination-left">
+            <img src="https://image.freepik.com/free-photo/buildings-tall-tower_181624-20757.jpg" alt="">
+        </div>
+        <div class="destination-right">
+            <div>
+                <h3>Canada</h3><span>2021-09-02</span>
+            </div>
+            <div>
+                to Toronto
+            </div>
+            <p>13 days </p>
+            <a href="" class="remove">REMOVE</a>
+            <a href="" class="details">Details</a>
+        </div>
+    </div> --}}
