@@ -1,0 +1,23 @@
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+nav {
+
+    display: flex;
+    justify-content: flex-end;
+    gap: 40px
+}
+.group__items {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+}

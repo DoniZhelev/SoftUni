@@ -95,12 +95,14 @@ button {
     color: white;
     border-radius: 20px;
     padding: 5px 30px;
+    cursor: pointer;
 }
 
 span {
     text-decoration: underline;
     color: var(--clr-span);
     font-weight: bold;
+    margin-left: 10px;
 }
 
 button, span {
