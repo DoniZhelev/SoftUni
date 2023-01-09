@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+:root {
+    --clr-background-body:#ffffff;
+    --clr-background-card:#819daf;
+    --clr-bg-button:#327dc4;
+    ---clr-heading: #3583c8;
+
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--clr-background-body);
+}
+
+main {
+    max-width: 1200px;
+    max-height: 500px;
+    margin: 0 auto;
+}
+
+.header {
+    text-align: center;
+}
+
+.header h1 {
+    padding-top: 50px;
+}
+
+.header p {
+    padding-bottom: 20px;
+    padding-top: 10px;
+}
+
+span {
+    color: var(---clr-heading);
+}
+
+.card__img {
+    padding: 0;
+}
+
+.card__img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.card_container {
+    display: grid;
+    gap: 15px;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.card {
+    background-color: var(--clr-background-card);
+    border-radius: 15px;
+    min-height: 490px;
+    min-width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-items: end;
+   
+}
+
+.card__body > p {
+    padding: 15px;
+    padding-top: 5px;
+}
+
+.card__heading {
+    font-size: larger;
+    font-weight: bolder;
+    padding: 20px;
+}
+
+.card_button {
+    padding-left: 20px;
+   
+}
+
+button {
+    background-color: var(--clr-bg-button);
+    color: white;
+    border: 1px solid #b3c1c9;
+    padding: 4px 22px;
+    border-radius: 20px;
+}
+

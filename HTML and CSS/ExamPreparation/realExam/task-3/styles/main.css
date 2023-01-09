@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+
+:root {
+    --clr-body: #ffffff;
+    --clr-first-section: #54546d;
+    --clr-button: #9a5dc6;
+    --clr-background-cards:#ffffff;
+    --clr-firstCard-bottom: linear-gradient(87deg, rgba(16,166,73,1) 50%, rgba(70,210,123,1) 100%);
+    --clr-secondCard-bottom:linear-gradient(87deg, rgba(78,112,143,1) 50%, rgba(97,152,203,1) 100%);
+    --clr-thirtCard-bottom:linear-gradient(87deg, rgba(80,61,170,1) 50%, rgba(127,111,213,1) 100%);
+
+}
+
+
+body {
+font-family: 'Lato',  sans-serif;
+background-color: var(--clr-body);
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Montserrat', sans-serif;
+}
+/* HEADER */
+header {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 100px;
+    padding-bottom: 30px;
+    padding-top: 20px;
+}
+
+header nav ul {
+    width: 100%;
+    display: flex;
+    align-items:end;
+    gap: 20px;
+    list-style-type: none;
+    
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #54546d;
+    font-weight: 600;
+    font-size: 16px;
+    
+}
+
+.nav_logo {
+    width: 150px;
+    height: 60px;
+    position: absolute;
+    left: 150px;
+    top: 30px;
+}
+
+/*  MAIN  */
+.card_taxes {
+    background-color: var(--clr-first-section);
+}
+
+.card_taxes h1 {
+    text-align: center;
+    color: white;
+    font-size: 40px;
+    font-weight: 600;
+    padding: 40px 0;
+    letter-spacing: 1.3px;
+}
+
+.card_container {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 0px 100px;
+ 
+}
+.card {
+    background-color: var(--clr-background-cards);
+    border-radius: 15px;
+    min-height: 490px;
+    min-width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    justify-items:center;
+    text-align: center;
+   
+}
+
+.card .card__heading {
+    padding-top: 50px;
+    font-size: 22px;
+    color: #54546d;
+}
+
+.card button {
+    background-color: var(--clr-button);
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: 20px;
+    color: white;
+    letter-spacing: 1px;
+    font-weight: bold;
+    padding: 14px 28px;
+    width: 250px;
+    margin: 0 auto;
+}
+
+.card > .card__taxes1 {
+    background: var(--clr-firstCard-bottom);
+    height: 130px;
+    color: white;
+}
+
+.card__taxes1 > .card___taxes_p1 {
+    font-size: 32px;
+    letter-spacing: 1.2px;
+    padding: 20px;
+} 
+
+p.card__info_paragraph1 {
+    padding:0px  20px;
+    font-size: 22px;
+    font-weight: lighter;
+}
+
+
+.card > .card__taxes2{
+    background: var(--clr-secondCard-bottom);
+    height: 130px;
+    color: white;
+}
+.card__taxes2,
+.card__taxes3 {
+    display: flex;
+    align-items: center;
+    padding: 15px;  
+}
+
+.card___taxes_p1 {
+    font-size: 22px;
+}
+
+
+
+.card > .card__taxes3 {
+    background: var(--clr-thirtCard-bottom);
+    height: 130px;
+    color: white;
+}
+
+p.card__info_paragraph1 {
+    padding:0px  20px;
+    font-size: 22px;
+    font-weight: lighter;
+}
+
+hr {
+    display
+}
