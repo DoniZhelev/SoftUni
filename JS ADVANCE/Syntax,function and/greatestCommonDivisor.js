@@ -11,4 +11,4 @@ function main(a,b) {
     console.log(a);
 }
 
-main(5,18)
+main(12,36)
